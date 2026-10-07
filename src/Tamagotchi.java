@@ -12,7 +12,7 @@ public class Tamagotchi {
     }
 
     void a(){
-    if(modus = 3){
+    if(modus == 3){
     }
 
     }

@@ -50,7 +50,7 @@ public class test extends JFrame {
     // Konstruktor
     // ------------------------------------------------------------
 
-    public Tamagotchi() {
+    public test() {
 
         setTitle("Mein Tamagotchi");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
