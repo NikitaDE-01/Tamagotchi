@@ -11,8 +11,9 @@ public class Tamagotchi {
 
     }
 
-    void a (){
-
+    void a(){
+    if(modus = 3){
+    }
 
     }
 
