@@ -1,2 +1,2 @@
-public class TamagotchiApp {
+public class TamagotchiApp extends Tamagotchi{
 }
