@@ -7,10 +7,17 @@ public class Tamagotchi extends JFrame {
                 // modus=4(Krankheitsmodus); modus=5(Füttermodus);
 
     //Button initializing
-    JButton Button_a = new JButton("THIS RIGHT HERE THE BUTT ON");
-    JButton Button_b = new JButton("NEW BUTTON B");
-    JButton Button_c = new JButton("BUTTON SEE");
-    JButton Button_reset = new JButton("RESET BUTTTON UKAY");
+    ImageIcon Image_Button_a = new ImageIcon("H:/Downloads/Button_a.png");
+    ImageIcon Image_Button_b = new ImageIcon("H:/Downloads/Button_b.png");
+    ImageIcon Image_Button_c = new ImageIcon("H:/Downloads/Button_c.png");
+    ImageIcon Image_Button_reset = new ImageIcon("H:/Downloads/Button_reset.png");
+
+    ImageIcon mainScreenImage = new ImageIcon("H:/Downloads/EGG.png");
+
+    JButton Button_a = new JButton(Image_Button_a);
+    JButton Button_b = new JButton(Image_Button_b);
+    JButton Button_c = new JButton(Image_Button_c);
+    JButton Button_reset = new JButton(Image_Button_reset);
 
 
     Tamagotchi() {
@@ -20,14 +27,15 @@ public class Tamagotchi extends JFrame {
         this.setVisible(true);
 
 
-        ImageIcon Image = new ImageIcon("H:/Downloads/EGG.png");
+
         JLabel text = new JLabel(/*Image*/);
 
         JPanel hauptPanel = new JPanel();                                   //Panel for screen
         this.add(hauptPanel);
         hauptPanel.setSize(600,750);
 
-        JPanel buttonPanel = new JPanel(new GridLayout(1,4));
+        JPanel buttonPanel = new JPanel(new GridLayout(1,4, 10, 10));
+
         this.add(buttonPanel);
         buttonPanel.add(Button_a);
         //Panel
@@ -100,6 +108,7 @@ public class Tamagotchi extends JFrame {
                 modus = 1;
                 break;
         }
+        showPicture(modus);
         System.out.println("Butoon a switched MODUS to " + modus);
     }
 
@@ -107,6 +116,7 @@ public class Tamagotchi extends JFrame {
         if (modus == 0) {
             modus = 1;
         }
+        showPicture(modus);
         System.out.println("Button b switched MODUS to " + modus);
     }
 
@@ -128,6 +138,7 @@ public class Tamagotchi extends JFrame {
                 modus = 4;
                 break;
         }
+        showPicture(modus);
         System.out.println("Butoon C switched MODUS to " + modus);
 
     }
@@ -139,7 +150,12 @@ public class Tamagotchi extends JFrame {
 
 
     void showPicture(int modus) {
-
-
+        switch (modus){
+            case 0:
+                //Hier muss die Animation für die Brütung stattfinden
+                break;
+            case 1:
+                
+        }
     }
 }
